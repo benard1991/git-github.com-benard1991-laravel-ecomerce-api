@@ -113,6 +113,6 @@ class OrderController extends Controller
         if ($order) {
             $order->update(['status' => $request->status]);
             return response()->json("Status changed successfully", 200);
-        } else return response()->json("Order was not found", 400);
+        } else return response()->json("Order Id was not found", 400);
     }
 }
